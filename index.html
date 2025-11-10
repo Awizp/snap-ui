@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.ico">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Snap webpage | Banner</title>
+</head>
+
+<body>
+  <!-- ****** Header component ****** -->
+  <header class="header_section layout_wrapper">
+    <!-- ****** Navbar section ****** -->
+    <nav class="navbar_section layout_breakout">
+      <!-- logo -->
+      <div title="logo" class="navbar_logo">
+        <img src="./images/logo.svg" alt="Company logo">
+      </div>
+
+      <!-- navbar open -->
+      <input type="checkbox" id="navbar_open">
+      <label class="navbar_hamburger" for="navbar_open">
+        <img src="./images/icon-menu.svg" alt="Hamburger Menu">
+      </label>
+
+      <!-- navbar links -->
+      <div class="navbar_links">
+
+        <div class="navbar_lists">
+          <select name="features" id="Features">
+            <option>Features</option>
+            <option value="todo">
+              Todo List
+            </option>
+            <option value="calender">
+              Calender
+            </option>
+            <option value="reminder">
+              Reminders
+            </option>
+            <option value="plan">
+              Planning
+            </option>
+          </select>
+
+          <select name="company" id="company">
+            <option>Company</option>
+            <option value="history">History</option>
+            <option value="team">Our Team</option>
+            <option value="blog">Blog</option>
+          </select>
+
+          <a href="#">Careers</a>
+          <a href="#">About</a>
+        </div>
+
+        <!-- navbar account -->
+        <div class="navbar_account">
+          <a href="#">Login</a>
+          <a href="#">Register</a>
+        </div>
+
+        <!-- navbar close -->
+        <label class="navbar_close" for="navbar_open">
+          <img src="./images/icon-close-menu.svg" alt="Close Menu">
+        </label>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- ****** Main component ****** -->
+  <main class="main_section layout_wrapper">
+    <!-- ****** Hero section ****** -->
+    <div class="hero_section layout_container">
+      <!-- hero content -->
+      <div class="hero_content_container">
+        <div class="hero_details">
+          <h1>Make remote work</h1>
+          <p>Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.</p>
+          <button type="button">Learn more</button>
+        </div>
+
+        <!-- hero clients -->
+        <div class="hero_clients">
+
+          <div class="image_container">
+            <img src="./images/client-audiophile.svg" alt="Client Image">
+          </div>
+          <div class="image_container">
+            <img src="./images/client-databiz.svg" alt="Client Image">
+          </div>
+          <div class="image_container">
+            <img src="./images/client-maker.svg" alt="Client Image">
+          </div>
+          <div class="image_container">
+            <img src="./images/client-meet.svg" alt="Client Image">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- hero profile -->
+      <div class="hero_profile_container">
+        <picture class="hero_banner">
+          <source srcset="./images/image-hero-mobile.png" media="(max-width: 576px)" />
+          <img src="./images/image-hero-desktop.png" alt="Hero Image" />
+        </picture>
+      </div>
+
+    </div>
+  </main>
+</body>
+
+</html>
